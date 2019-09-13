@@ -1,0 +1,99 @@
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -ms-transform: $transform;
+  transform: $transform;
+}
+
+@mixin animation-delay($animation) {
+  -webkit-animation-delay: $animation;
+  animation-delay: $animation;
+}
+
+@mixin animation-duration($animation) {
+  -webkit-animation-duration: $animation;
+  animation-duration: $animation;
+}
+
+@mixin animation($animation) {
+  -moz-animation: $animation;
+  -webkit-animation: $animation;
+  -o-animation: $animation;
+  animation: $animation;
+}
+
+@mixin animation-name($animation) {
+  -webkit-animation-name: $animation;
+  animation-name: $animation;
+}
+
+@mixin box-shadow($shadow) {
+  -moz-box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+@mixin transform-origin($origin) {
+  -webkit-transform-origin: $origin;
+  -ms-transform-origin: $origin;
+  transform-origin: $origin;
+}
+
+@mixin box-sizing($boxsizing) {
+  -webkit-box-sizing: $boxsizing;
+  box-sizing: $boxsizing;
+}
+
+@mixin flex-box($flex) {
+  -ms-flex: 0 0 $flex;
+  flex: 0 0 $flex;
+  max-width: $flex;
+}
+
+@mixin flex-d($dflex:flex, $direction: row, $content: null , $items: null, $wrap: null) {
+  display: $dflex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $items;
+  flex-wrap: $wrap;
+}
+
+@mixin pos-percent($percent) {
+  @if $percent == 50% {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+  } @else if $percent == X {
+    position: absolute;
+    left: 50%;
+    @include transform(translateX(-50%));
+  } @else if $percent == Y {
+    position: absolute;
+    top: 50%;
+    @include transform(translateY(-50%));
+  }
+}
+
+@mixin scrollBox($scroll, $track-color, $thumb-color, $px) {
+  &::-webkit-scrollbar-track {
+    background: $track-color;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $thumb-color;
+  }
+  @if $scroll == width {
+    &::-webkit-scrollbar {
+      width: $px;
+    }
+  } @else if $scroll == height {
+    &::-webkit-scrollbar {
+      height: $px;
+    }
+  }
+}

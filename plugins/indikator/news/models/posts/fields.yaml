@@ -1,0 +1,161 @@
+fields:
+    title:
+        label: 'indikator.news::lang.form.title'
+        required: true
+        attributes:
+            autofocus: ''
+        span: storm
+        cssClass: 'col-sm-12 col-lg-6'
+        type: text
+    slug:
+        label: 'indikator.news::lang.form.slug'
+        required: true
+        preset: title
+        span: storm
+        cssClass: 'col-sm-12 col-lg-6'
+        type: text
+    category:
+        label: 'indikator.news::lang.form.category'
+        type: relation
+        span: storm
+        cssClass: 'col-sm-12 col-lg-6'
+    tags:
+        label: 'indikator.news::lang.form.tags'
+        type: taglist
+        span: storm
+        cssClass: 'col-sm-12 col-lg-6'
+tabs:
+    fields:
+        introductory:
+            tab: 'indikator.news::lang.form.introductory'
+            type: richeditor
+            size: large
+        content:
+            tab: 'indikator.news::lang.form.content'
+            type: richeditor
+            size: giant
+        enable_newsletter_content:
+            tab: 'indikator.news::lang.form.newsletter_content_tab'
+            label: 'indikator.news::lang.form.enable_newsletter_content'
+            comment: 'indikator.news::lang.form.enable_newsletter_content_description'
+            type: switch
+            default: false
+            context: update
+        newsletter_content:
+            tab: 'indikator.news::lang.form.newsletter_content_tab'
+            label: 'indikator.news::lang.form.newsletter_content'
+            type: richeditor
+            size: giant
+            context: update
+        seo_desc:
+            tab: 'indikator.news::lang.form.seo_tab'
+            label: 'indikator.news::lang.form.seo_desc'
+            type: textarea
+            size: large
+            span: right
+        seo_title:
+            tab: 'indikator.news::lang.form.seo_tab'
+            label: 'indikator.news::lang.form.seo_title'
+            span: left
+            type: text
+        seo_keywords:
+            tab: 'indikator.news::lang.form.seo_tab'
+            label: 'indikator.news::lang.form.seo_keywords'
+            span: left
+            type: text
+        seo_image:
+            tab: 'indikator.news::lang.form.seo_tab'
+            label: 'indikator.news::lang.form.seo_image'
+            type: mediafinder
+            mode: file
+            span: left
+secondaryTabs:
+    fields:
+        postinfo:
+            type: postinfo
+            context: update
+            tab: Misc
+        hotnews:
+            label: 'Hot news'
+            span: full
+            type: switch
+            tab: Misc
+        image:
+            label: Image
+            mode: image
+            span: full
+            type: mediafinder
+            tab: Misc
+        img:
+            label: 'Image Post 1'
+            mode: image
+            span: full
+            type: mediafinder
+            tab: Misc
+        link_url1:
+            label: 'Link Url'
+            span: full
+            attributes: null
+            type: text
+            tab: Misc
+        contentimg1:
+            label: 'Content Image 1'
+            span: full
+            attributes: null
+            type: text
+            tab: Misc
+        img2:
+            label: 'Image Post 2'
+            mode: image
+            span: full
+            type: mediafinder
+            tab: Misc
+        link_url2:
+            label: 'Link Url'
+            span: full
+            attributes: null
+            type: text
+            tab: Misc
+        contentimg2:
+            label: 'Content Image 2'
+            span: full
+            attributes: null
+            type: text
+            tab: Misc
+        published_at:
+            label: 'indikator.news::lang.form.published_at'
+            type: datepicker
+            mode: datetime
+            tab: Misc
+        last_send_at:
+            label: 'indikator.news::lang.form.last_send_at'
+            type: datepicker
+            readOnly: true
+            mode: datetime
+            disabled: disabeld
+            tab: Misc
+        user:
+            label: 'indikator.news::lang.form.author'
+            type: dropdown
+            tab: Misc
+        status:
+            label: 'indikator.news::lang.form.status'
+            required: true
+            type: radio
+            options:
+                1: 'indikator.news::lang.form.status_published'
+                2: 'indikator.news::lang.form.status_hide'
+                3: 'indikator.news::lang.form.status_draft'
+            default: 3
+            span: auto
+            tab: Misc
+        featured:
+            label: 'indikator.news::lang.form.featured'
+            required: true
+            type: radio
+            options:
+                1: 'indikator.news::lang.form.yes'
+                2: 'indikator.news::lang.form.no'
+            default: 2
+            span: auto
+            tab: Misc

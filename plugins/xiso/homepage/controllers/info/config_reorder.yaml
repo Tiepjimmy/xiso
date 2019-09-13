@@ -1,0 +1,4 @@
+title: Info
+modelClass: Xiso\Homepage\Models\Info
+toolbar:
+    buttons: reorder_toolbar

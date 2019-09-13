@@ -1,0 +1,4 @@
+title: Hoidap
+modelClass: Xiso\Homepage\Models\Hoidap
+toolbar:
+    buttons: reorder_toolbar

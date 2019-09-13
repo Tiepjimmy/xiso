@@ -1,0 +1,49 @@
+==
+<div class="sidebar-signup" id="test">
+    <div class="wrap-side-signup">
+        <h2 class="title-header-signup">Đăng ký nhận tư vấn</h2>
+        <p class="text">
+            Mời bạn hoàn thiện form thông tin bên dưới để được trường học trực tuyến XiSo hỗ trợ cho bạn đầy đủ nhất.
+            <span>*Bắt buộc</span>
+        </p>
+        <form data-request="onCreateData"  class="frm-signup frm-validate">
+            <div class="form-group">
+                <label for="f_name">Họ tên <span>*</span></label>
+                <input type="text" id="f_name" name="name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="f_email">Email</label>
+                <input type="email" id="f_email" name="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="f_phone">Số điện thoại <span>*</span></label>
+                <input type="number" maxlength="10" id="f_phone" name="phone" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="f_year">Chọn năm sinh <span>*</span></label>
+                <select id="f_year" name="year" class="f_s_year" required>
+                    <option></option>
+                    {%for key, array in neworder %}
+                    <option value="{{ array }}"> {{ array }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="f_country">Thành phố</label>
+                <input type="text" id="f_country" name="city" class="form-control">
+            </div>
+            <div class="form-group pt-15 pb-10">
+                <label for="f_note" class="sr-only"></label>
+                <textarea id="f_note" name="content" class="form-control f_note" rows="4"
+                placeholder="Thông tin bổ sung để XiSo liên hệ, ghi chú"></textarea>
+            </div>
+            <button class="btn-gnl-orange btn-signup-now" type="submit">
+                Đăng ký ngay
+            </button>
+            <p class="text text-center">
+                Bằng việc đăng kí, bạn đồng ý để XiSo liên hệ thông qua các thông tin liên hệ. XiSo cam kết bảo mật thông tin
+                cho bạn, tuyệt đối không cung cấp cho đơn vị khác
+            </p>
+        </form>
+    </div>
+</div>

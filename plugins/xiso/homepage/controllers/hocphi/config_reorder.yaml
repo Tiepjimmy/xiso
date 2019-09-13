@@ -1,0 +1,4 @@
+title: Hocphi
+modelClass: Xiso\Homepage\Models\Hocphi
+toolbar:
+    buttons: reorder_toolbar

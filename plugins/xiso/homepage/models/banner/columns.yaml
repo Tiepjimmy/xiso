@@ -1,0 +1,15 @@
+columns:
+    id:
+        label: ID
+        type: number
+        searchable: true
+        sortable: true
+    name:
+        label: Name
+        type: text
+        searchable: true
+        sortable: true
+    image:
+        label: Image
+        type: partial
+        path: ~/plugins/xiso/homepage/models/banner/_image.htm

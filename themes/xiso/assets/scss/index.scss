@@ -1,0 +1,666 @@
+@import "body";
+
+@media screen and (min-width: 576px) {
+  .popup-signup-success {
+    .modal-dialog {
+      width: 500px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 740px;
+  }
+  .vertical-timeline-content {
+    .title {
+      font-size: 18px;
+    }
+  }
+  .popup-signup-success {
+    .modal-dialog {
+      width: 650px;
+      max-width: 650px;
+    }
+  }
+  .popup-mentor {
+    .modal-dialog {
+      width: 700px;
+      max-width: 700px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .mobile-button {
+    display: none;
+  }
+  .container {
+    max-width: 980px;
+  }
+  .popup-mentor {
+    .modal-dialog {
+      width: 800px;
+      max-width: 800px;
+    }
+  }
+  .btn-sidebar-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+  .logo--ft {
+    a {
+      margin-right: 40px;
+    }
+    .slogan-ft {
+      padding-right: 70px;
+      padding-left: 30px;
+    }
+  }
+  .center-orientation {
+    &#vertical_band {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      &:before {
+        left: 50%;
+        margin-left: -2px;
+      }
+      &:after {
+        left: calc(50% + 1px);
+        @include transform(translateX(-50%));
+      }
+    }
+    .vertical-band-block {
+      &:first-child {
+        &:before {
+          left: 50%;
+          @include transform(translateX(-50%));
+        }
+        .vertical-band-content {
+          margin-top: 0;
+        }
+      }
+      &:nth-child(even) .vertical-band-content {
+        float: right;
+        &:before {
+          right: calc(100% + 16px);
+          left: auto;
+        }
+        .img {
+          &:before {
+            right: calc(100% + 14px);
+          }
+        }
+      }
+      &:nth-child(odd) .vertical-band-content {
+        .img {
+          &:before {
+            background: url("../img/icon-l.png") center no-repeat;
+            background-size: contain;
+            left: calc(100% + 18px);
+          }
+        }
+      }
+      .vertical-band-content {
+        margin-left: 0;
+        padding: 20px;
+        width: 45%;
+        margin-top: -60px;
+        &:before {
+          right: auto;
+          left: calc(100% + 19px);
+        }
+        &.is-hidden {
+          visibility: hidden;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .logo {
+    a {
+      width: 145px;
+      height: 75px;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .logo--ft .slogan-ft {
+    padding: 0 0 0 20px;
+    margin-right: -10px;
+  }
+  header {
+    .header-main-wrapper .header-main-menu #js_main-menu {
+      padding-left: 150px;
+      .list-main-menu li.menu-item {
+        font-size: 12px;
+        line-height: 50px;
+        padding: 0 10px 0 10px;
+      }
+    }
+    .header-main-bottom .slogan--search-qa {
+      .slogan-content {
+        width: 58%;
+        padding-left: 150px;
+      }
+      .search-qa {
+        width: 42%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #js_main-menu, #js_list-main-menu li a span.dropdown-toggle:after {
+    display: none;
+  }
+  header {
+    .header-main-wrapper .header-main-menu {
+      justify-content: flex-end;
+    }
+    .header-main-bottom .slogan--search-qa .search-qa {
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
+  .section-list-students .student-wrap .student-content {
+    .title-student-show {
+      padding: 10px 15px;
+      .tt-student, .short-detail {
+        font-size: 13px;
+      }
+    }
+  }
+  .mobile-button {
+    padding: 10px 0;
+    border: none;
+    display: block;
+    outline: none;
+    background: transparent;
+    color: $cl-white;
+    font-size: 28px;
+    margin-left: 20px;
+    cursor: pointer;
+    &:hover, &:focus {
+      color: $cl-white;
+    }
+    .ion {
+      @include transform(rotate(180deg));
+    }
+  }
+  footer {
+    background: $cl-blue-dark;
+    .text-title-ft {
+      font-size: 18px;
+    }
+    .footer-inner {
+      background: $cl-blue-dark;
+      .logo--ft .slogan-ft {
+        color: $cl-white;
+      }
+    }
+  }
+  .registration-form {
+    .wrap-registration-form {
+      .frm-registration .text-registration {
+        padding: 0;
+      }
+    }
+  }
+  .btn-sidebar-mobile {
+    display: block;
+    color: $cl-white;
+    font-weight: bold;
+    background: $cl-orange;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0.5rem 0.75rem 0.5rem calc(0.5rem + 8px);
+    i {
+      font-size: 20px;
+      margin-right: 10px;
+      vertical-align: middle;
+      &.double-up {
+        &:before {
+          content: '\f102';
+          font-family: FontAwesome, sans-serif;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  #js_menu.mm-menu_offcanvas {
+    width: 60%;
+  }
+  .section-list-students .student-wrap .student-img {
+    height: 320px;
+  }
+  .center-orientation {
+    &#vertical_band {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      &:before {
+        left: 50%;
+        margin-left: -2px;
+      }
+      &:after {
+        left: calc(50% + 1px);
+        @include transform(translateX(-50%));
+      }
+    }
+    .vertical-band-block {
+      &:first-child {
+        &:before {
+          left: 50%;
+          @include transform(translateX(-50%));
+        }
+        .vertical-band-content {
+          margin-top: 0;
+        }
+      }
+      &:nth-child(even) .vertical-band-content {
+        float: right;
+        &:before {
+          right: calc(100% + 27px);
+          left: auto;
+        }
+        .img {
+          &:before {
+            right: calc(100% + 24px);
+          }
+        }
+      }
+      &:nth-child(odd) .vertical-band-content {
+        .img {
+          &:before {
+            background: url("../img/icon-l.png") center no-repeat;
+            background-size: contain;
+            left: calc(100% + 28px);
+          }
+        }
+      }
+      .vertical-band-content {
+        margin-left: 0;
+        padding: 20px;
+        width: 45%;
+        margin-top: -60px;
+        &:before {
+          right: auto;
+          left: calc(100% + 31px);
+        }
+        &.is-hidden {
+          visibility: hidden;
+        }
+      }
+    }
+  }
+  .section-news.section-news-area .content-news-slide {
+    .new-image {
+      max-height: 480px;
+      height: 480px;
+    }
+    .content-new-detail-item .new-image {
+      height: 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 461px) {
+  .small-clamp_3 {
+    //noinspection CssUnknownProperty
+    -webkit-line-clamp: 3;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    a {
+      width: 130px;
+      height: 70px;
+    }
+    img {
+      width: 105px;
+    }
+  }
+  .title-inner {
+    font-size: 18px;
+  }
+  .title__2, .title__3 {
+    font-size: 16px;
+  }
+  .section-news {
+    .content-news-slide .new-detail-item .new-item {
+      margin-bottom: 20px;
+      .title-new {
+        font-size: 16px;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+    &.section-news-area {
+      .content-news-slide {
+        .new-detail-item .new-item {
+          .title-new {
+            font-size: 17px;
+          }
+        }
+        .content-new-detail-item .new-detail-item .new-item .title-new {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  footer {
+    position: relative;
+  }
+  .registration-form {
+    .wrap-registration-form {
+      padding: 40px 0;
+      .frm-registration {
+        padding: 20px;
+      }
+    }
+  }
+  .section-news-area .wrapper-blog {
+    .content-blog .title-blog .title-inner {
+      font-size: 24px;
+    }
+  }
+  .popup-mentor {
+    .modal-dialog {
+      width: calc(100% - 2rem);
+      max-width: calc(100% - 2rem);
+      margin: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  .section-list-students .student-wrap .student-img {
+    height: 310px;
+  }
+  .section-news {
+    .content-news-slide .content-new-detail-item .new-image {
+      width: 175px;
+      height: 150px;
+    }
+    .content-news {
+      padding: 40px 20px 60px 70px;
+      .news-header-title {
+        left: -10px;
+      }
+    }
+    &.section-news-area .content-news-slide {
+      .new-image {
+        max-height: 330px;
+        height: 330px;
+      }
+      .content-new-detail-item .new-image {
+        width: 190px;
+        height: 135px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 376px) {
+  footer {
+    .widget-text {
+      iframe {
+        width: auto !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .mobile-button {
+    margin-right: 10px;
+    padding: 0;
+  }
+  .section-banner {
+    //.wrap-banner {
+    //  min-height: 160px;
+    //  position: relative;
+    //  overflow: hidden;
+    //  img {
+    //    height: 100%;
+    //    min-width: 100%;
+    //    max-width: initial;
+    //    width: auto;
+    //    @include pos-percent(Y);
+    //    left: 20%;
+    //    @include transform(translate(-20%, -50%));
+    //  }
+    //}
+  }
+  .wrap-text-page .text-bottom {
+    font-size: 12px;
+  }
+  .section-news {
+    .content-news {
+      padding: 10px 10px 50px;
+      width: 100%;
+      .news-header-title {
+        position: static;
+        transform: unset;
+        @include flex-d(flex, row, space-between, center, wrap);
+        margin-top: -30px;
+        margin-bottom: 15px;
+        padding: 0 20px;
+      }
+      .content-news-slide {
+        margin-top: 0;
+        .new-detail-item .new-item {
+          .title-new {
+            font-size: 15px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+        .content-new-detail-item {
+          &.--flex-sd {
+            display: block;
+          }
+          .new-image {
+            width: 100%;
+            height: 320px;
+          }
+        }
+        .new-detail-item {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .page-content .wrapper-page .wrap-page-body {
+    .content-question .card-header [data-toggle="collapse"] {
+      font-size: 15px;
+    }
+  }
+  .registration-form {
+    .wrap-registration-form {
+      .bg__right {
+        padding: 20px;
+      }
+      .frm-registration .text-registration .title-inner {
+        font-size: 22px;
+      }
+    }
+  }
+  .popup-signup-success {
+    .modal-dialog {
+      width: calc(100% - 2rem);
+      margin: auto;
+    }
+  }
+  .page-content .wrapper-page .wrapper-mentor {
+    .header-mentor {
+      .title-mentor {
+        font-size: 25px;
+      }
+      .title-mtor-2 {
+        font-size: 16px;
+      }
+    }
+  }
+  .popup-mentor .modal-body {
+    .col-left-mentor {
+      .icon {
+        right: auto;
+        height: 0;
+        width: 100%;
+        bottom: -12px;
+        top: auto;
+        padding: 0 70px;
+        @include transform(unset);
+        @include flex-d(flex, row, space-between, center, nowrap);
+        &:before, &:after {
+          border-bottom: 2px solid #a7a9b0;
+          position: static;
+          @include transform(unset);
+          width: 30%;
+        }
+        i {
+          @include transform(unset);
+          position: static;
+          margin-top: -8px;
+        }
+      }
+    }
+    .text {
+      padding: 40px 10px 20px;
+    }
+  }
+  #cfacebook {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) and (min-width: 461px) {
+  .section-list-students {
+    .col-student {
+      @include flex-box(50%);
+    }
+    .student-wrap .student-img {
+      height: 300px;
+    }
+  }
+  footer {
+    .text-title-ft {
+      font-size: 14px;
+    }
+    .widget-col-small {
+      @include flex-box(50%);
+    }
+  }
+  .section-news {
+    .content-news-slide {
+      .new-image {
+        img {
+          min-height: 100%;
+          height: auto;
+        }
+      }
+    }
+    &.section-news-area {
+      .content-news {
+        .content-news-slide {
+          .new-image {
+            max-height: 340px;
+            height: 340px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .logo {
+    top: -5px;
+    a {
+      width: 115px;
+      height: 64px;
+      &:after {
+        right: -10px;
+        height: 40px;
+      }
+    }
+    &--ft {
+      padding: 0;
+    }
+  }
+  .section-list-students .student-wrap .student-img {
+    height: auto;
+    max-height: 400px;
+    img {
+      position: static;
+      max-width: 100%;
+      height: auto;
+      width: 100%;
+      @include transform(unset);
+    }
+  }
+  footer {
+    .text-title-ft {
+      font-size: 15px;
+    }
+  }
+  .page-content .wrapper-page .wrap-page-body {
+    .content-question .card-header [data-toggle="collapse"] {
+      font-size: 14px;
+    }
+  }
+  .registration-form .wrap-registration-form {
+    .frm-registration .f_s_year {
+      width: 100%;
+    }
+  }
+  .section-news {
+    .content-news-slide {
+      .new-image, .content-new-detail-item .new-image {
+        height: 260px;
+      }
+    }
+    &.section-news-area {
+      .content-news {
+        .content-news-slide {
+          .new-image {
+            max-height: 260px;
+            height: 260px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 460px) and (min-width: 376px) {
+  .section-list-students .student-wrap .student-content .title-student-show {
+    .tt-student {
+      font-size: 15px;
+    }
+    .short-detail {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header .header-main-bottom .slogan--search-qa .search-qa .input-group {
+    width: 140px;
+  }
+}
+

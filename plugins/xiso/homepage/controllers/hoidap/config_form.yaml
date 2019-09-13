@@ -1,0 +1,10 @@
+name: Hoidap
+form: $/xiso/homepage/models/hoidap/fields.yaml
+modelClass: Xiso\Homepage\Models\Hoidap
+defaultRedirect: xiso/homepage/hoidap
+create:
+    redirect: 'xiso/homepage/hoidap/update/:id'
+    redirectClose: xiso/homepage/hoidap
+update:
+    redirect: xiso/homepage/hoidap
+    redirectClose: xiso/homepage/hoidap

@@ -1,0 +1,59 @@
+{% set cachhoc = __SELF__.cachhoc %}
+{% set title = __SELF__.title %}
+
+
+<div class="page-content animated fadeInRight">
+  <div class="wrap-text-page text-left">
+    <div class="container">
+      <div class="text-bottom">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="{{ 'homepage' | page}}"><img src="{{'assets/img/home.png'|theme }}" alt=""></a>
+          </li>
+          <li class="breadcrumb-item active">
+            <span>{{title.name}}</span>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper-page">
+    <div class="container">
+      <div class="row">
+        <!--Sidebar menu start-->
+        <div class="col-lg-3">
+          {% partial 'site/sidebar'%}
+        </div>
+        <!--Sidebar menu end-->
+
+        <div class="col-lg-5">
+          <div class="wrap-page-body">
+            <div class="content-page">
+              <div class="txt-head-body">
+                <h1 class="title-page title-page-bb">
+                  {{title.name}} chương trình XiSo CHUẨN và HIỆU QUẢ
+                </h1>
+                
+              </div>
+              {% for pot in cachhoc %}
+              <div class="txt-body">
+                <h3>{{pot.title}}</h3>
+                <p>
+                  {{html_limit(pot.introductory,150) | raw}}
+                </p>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+
+        <!--Form sign up for advice start-->
+        <div class="col-lg-4">
+         {% partial 'site/sidebar-signup'%}
+       </div>
+       <!--Form sign up for advice end-->
+     </div>
+   </div>
+ </div>
+</div>

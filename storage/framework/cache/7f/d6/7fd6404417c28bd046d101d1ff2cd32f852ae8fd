@@ -1,0 +1,142 @@
+1568350161a:1:{s:16:"site/sidebar.htm";a:5:{s:8:"fileName";s:16:"site/sidebar.htm";s:7:"content";s:2910:"<div class="sidebar-collapse">
+    <ul class="nav-sidebar" id="nav-sidebar">
+        <li class="nav-item" data-active="1">
+            <a class="nav-link" href="{{ 'cach-hoc' |page }}" title="">
+                <span>Cách học tại XiSO</span>
+            </a>
+        </li>
+        <li class="nav-item" data-active="2">
+            <a class="nav-link" href="{{ 'hoc-phi'|page}}" title="">
+                <span>Học phí</span>
+            </a>
+        </li>
+        <li class="nav-item" data-active="3">
+            <a class="nav-link" href="{{ 'hoc-bong'|page }}" title="">
+                <span>Học bổng</span>
+            </a>
+        </li>
+        <li class="nav-item" data-active="4">
+            <a class="nav-link" href="{{ 'hoidap'|page }}" title="">
+                <span>Câu hỏi thường gặp</span>
+            </a>
+        </li>
+        <li class="item-region nav-item" data-active="5">
+            <a href="{{ 'chuongtrinhhoc'|page}}" class="nav-link" title="">
+                <span>Chương trình học XiSo</span>
+            </a>
+        </li>
+        <li class="nav-item" data-active="6">
+            <a href="{{ 'chuong-trinh-hoc'|page({slug:'dai-trang'})}}" class="nav-link" title="">
+                <span>Đai trắng</span>
+            </a>
+        </li>
+        <li class="nav-item" data-active="7">
+            <a href="{{ 'chuong-trinh-hoc'|page({slug:'dai-vang'})}}" class="nav-link" title="">
+                <span>Đai vàng</span>
+            </a>
+        </li>
+        <li class="nav-item" data-active="8">
+            <a href="{{ 'chuong-trinh-hoc'|page({slug:'dai-xanh-la-cay'})}}" class="nav-link" title="">
+                <span>Đai xanh lá cây</span>
+            </a>
+        </li>
+        <li class="nav-item" data-active="9">
+            <a href="{{ 'chuong-trinh-hoc'|page({slug:'dai-xanh-da-troi'})}}" class="nav-link" title="">
+                <span>Đai xanh da trời</span>
+            </a>
+        </li>
+        <li class="nav-item" data-active="10">
+            <a href="{{ 'chuong-trinh-hoc'|page({slug:'dai-do'})}}" class="nav-link" title="">
+                <span>Đai đỏ</span>
+            </a>
+        </li>
+        <li class="nav-item" data-active="11">
+            <a href="{{ 'chuong-trinh-hoc'|page({slug:'dai-den'})}}"  class="nav-link" title="">
+                <span>Đai đen</span>
+            </a>
+        </li>
+    </ul>
+    <div class="nav-link block-share">
+        <span>Chia sẻ trang này</span>
+        <p class="icon--fnt">
+            <a href="https://www.facebook.com/" target="_blank" title="" class="_icon _icon-fb">
+                <i class="fa fa-facebook-square"></i>
+            </a>
+            <a href="#" title="" class="_icon _icon-print">
+                <i class="fa fa-print"></i>
+            </a>
+        </p>
+    </div>
+</div>
+
+
+";s:5:"mtime";i:1568279820;s:6:"markup";s:2904:"<div class="sidebar-collapse">
+    <ul class="nav-sidebar" id="nav-sidebar">
+        <li class="nav-item" data-active="1">
+            <a class="nav-link" href="{{ 'cach-hoc' |page }}" title="">
+                <span>Cách học tại XiSO</span>
+            </a>
+        </li>
+        <li class="nav-item" data-active="2">
+            <a class="nav-link" href="{{ 'hoc-phi'|page}}" title="">
+                <span>Học phí</span>
+            </a>
+        </li>
+        <li class="nav-item" data-active="3">
+            <a class="nav-link" href="{{ 'hoc-bong'|page }}" title="">
+                <span>Học bổng</span>
+            </a>
+        </li>
+        <li class="nav-item" data-active="4">
+            <a class="nav-link" href="{{ 'hoidap'|page }}" title="">
+                <span>Câu hỏi thường gặp</span>
+            </a>
+        </li>
+        <li class="item-region nav-item" data-active="5">
+            <a href="{{ 'chuongtrinhhoc'|page}}" class="nav-link" title="">
+                <span>Chương trình học XiSo</span>
+            </a>
+        </li>
+        <li class="nav-item" data-active="6">
+            <a href="{{ 'chuong-trinh-hoc'|page({slug:'dai-trang'})}}" class="nav-link" title="">
+                <span>Đai trắng</span>
+            </a>
+        </li>
+        <li class="nav-item" data-active="7">
+            <a href="{{ 'chuong-trinh-hoc'|page({slug:'dai-vang'})}}" class="nav-link" title="">
+                <span>Đai vàng</span>
+            </a>
+        </li>
+        <li class="nav-item" data-active="8">
+            <a href="{{ 'chuong-trinh-hoc'|page({slug:'dai-xanh-la-cay'})}}" class="nav-link" title="">
+                <span>Đai xanh lá cây</span>
+            </a>
+        </li>
+        <li class="nav-item" data-active="9">
+            <a href="{{ 'chuong-trinh-hoc'|page({slug:'dai-xanh-da-troi'})}}" class="nav-link" title="">
+                <span>Đai xanh da trời</span>
+            </a>
+        </li>
+        <li class="nav-item" data-active="10">
+            <a href="{{ 'chuong-trinh-hoc'|page({slug:'dai-do'})}}" class="nav-link" title="">
+                <span>Đai đỏ</span>
+            </a>
+        </li>
+        <li class="nav-item" data-active="11">
+            <a href="{{ 'chuong-trinh-hoc'|page({slug:'dai-den'})}}"  class="nav-link" title="">
+                <span>Đai đen</span>
+            </a>
+        </li>
+    </ul>
+    <div class="nav-link block-share">
+        <span>Chia sẻ trang này</span>
+        <p class="icon--fnt">
+            <a href="https://www.facebook.com/" target="_blank" title="" class="_icon _icon-fb">
+                <i class="fa fa-facebook-square"></i>
+            </a>
+            <a href="#" title="" class="_icon _icon-print">
+                <i class="fa fa-print"></i>
+            </a>
+        </p>
+    </div>
+</div>";s:4:"code";N;}}

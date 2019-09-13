@@ -1,0 +1,70 @@
+1568253192a:1:{s:16:"site/student.htm";a:6:{s:8:"fileName";s:16:"site/student.htm";s:7:"content";s:1827:"[comment]
+==
+        <div class="section-list-students">
+            <div class="container">
+                <div class="row row-list-students">
+                    <!--Student item start-->
+                    {%for binhluan in comment %}
+                        <div class="col-student col-md-4 col-sm-6">
+                            <div class="student-wrap wow fadeInUp">
+                                <div class="student-img">
+                                    <a href="#" title="">
+                                        <img src="{{ binhluan.image |media}}" alt="">
+                                    </a>
+                                </div>
+                                <div class="student-content">
+                                    <div class="hover-content text-detail-content">
+                                        <p class="clamp__5 small-clamp_3">
+                                           {{ binhluan.content }}
+                                        </p>
+                                    </div>
+                                    <div class="title-student-show text-center">
+                                        <a href="#" title="">
+                                            <h3 class="title__2 tt-student">
+                                                {{ binhluan.name }}
+                                            </h3>
+                                        </a>
+                                        <p class="short-detail">{{ binhluan.year }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!--Student item end-->
+                   {% endfor %}
+                </div>
+            </div>
+        </div>
+      ";s:5:"mtime";i:1567758533;s:6:"markup";s:1796:"<div class="section-list-students">
+            <div class="container">
+                <div class="row row-list-students">
+                    <!--Student item start-->
+                    {%for binhluan in comment %}
+                        <div class="col-student col-md-4 col-sm-6">
+                            <div class="student-wrap wow fadeInUp">
+                                <div class="student-img">
+                                    <a href="#" title="">
+                                        <img src="{{ binhluan.image |media}}" alt="">
+                                    </a>
+                                </div>
+                                <div class="student-content">
+                                    <div class="hover-content text-detail-content">
+                                        <p class="clamp__5 small-clamp_3">
+                                           {{ binhluan.content }}
+                                        </p>
+                                    </div>
+                                    <div class="title-student-show text-center">
+                                        <a href="#" title="">
+                                            <h3 class="title__2 tt-student">
+                                                {{ binhluan.name }}
+                                            </h3>
+                                        </a>
+                                        <p class="short-detail">{{ binhluan.year }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!--Student item end-->
+                   {% endfor %}
+                </div>
+            </div>
+        </div>";s:4:"code";N;s:7:"comment";a:0:{}}}

@@ -1,0 +1,31 @@
+columns:
+    id:
+        label: ID
+        type: number
+        searchable: true
+        sortable: true
+    lever:
+        label: Lever
+        type: number
+        searchable: true
+        sortable: true
+    dai:
+        label: Đai
+        type: text
+        searchable: false
+        sortable: false
+    monhoc:
+        label: 'Mon Học'
+        type: text
+        searchable: false
+        sortable: false
+    theomon:
+        label: 'Theo Môn'
+        type: text
+        searchable: true
+        sortable: true
+    theodai:
+        label: 'Theo Đai'
+        type: text
+        searchable: true
+        sortable: true

@@ -1,0 +1,21 @@
+fields:
+    lever:
+        label: Lever
+        span: auto
+        type: text
+    dai:
+        label: Đai
+        span: auto
+        type: text
+    monhoc:
+        label: 'Môn Học'
+        span: auto
+        type: text
+    theomon:
+        label: 'Theo Môn'
+        span: auto
+        type: text
+    theodai:
+        label: 'Theo Đai'
+        span: auto
+        type: text

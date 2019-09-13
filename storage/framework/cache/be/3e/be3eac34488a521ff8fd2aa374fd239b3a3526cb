@@ -1,0 +1,9 @@
+1568351932a:1:{s:10:"tintuc.htm";a:10:{s:8:"fileName";s:10:"tintuc.htm";s:7:"content";s:115:"title = "Tin Tức"
+url = "/tintuc"
+layout = "homepage"
+is_hidden = 0
+[tintuc]
+==
+
+
+{% component 'tintuc'%}";s:5:"mtime";i:1568343798;s:6:"markup";s:23:"{% component 'tintuc'%}";s:4:"code";N;s:5:"title";s:9:"Tin Tức";s:3:"url";s:7:"/tintuc";s:6:"layout";s:8:"homepage";s:9:"is_hidden";s:1:"0";s:6:"tintuc";a:0:{}}}

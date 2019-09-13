@@ -1,0 +1,12 @@
+list: $/xiso/neworder/models/newsorder/columns.yaml
+modelClass: Xiso\Neworder\Models\NewsOrder
+title: NewsOrder
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'xiso/neworder/newsorder/update/:id'

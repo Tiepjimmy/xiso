@@ -1,0 +1,10 @@
+name: Setting
+form: $/xiso/homepage/models/setting/fields.yaml
+modelClass: Xiso\Homepage\Models\Setting
+defaultRedirect: xiso/homepage/setting
+create:
+    redirect: 'xiso/homepage/setting/update/:id'
+    redirectClose: xiso/homepage/setting
+update:
+    redirect: xiso/homepage/setting
+    redirectClose: xiso/homepage/setting

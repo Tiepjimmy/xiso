@@ -1,0 +1,25 @@
+columns:
+    id:
+        label: ID
+        type: number
+        searchable: true
+        sortable: true
+    image:
+        label: Image
+        type: partial
+        path: ~/plugins/xiso/homepage/models/comment/_image.htm
+    name:
+        label: Name
+        type: text
+        searchable: true
+        sortable: true
+    year:
+        label: Year
+        type: text
+        searchable: true
+        sortable: true
+    content:
+        label: Content
+        type: text
+        searchable: true
+        sortable: true

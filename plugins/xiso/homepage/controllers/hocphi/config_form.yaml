@@ -1,0 +1,10 @@
+name: Hocphi
+form: $/xiso/homepage/models/hocphi/fields.yaml
+modelClass: Xiso\Homepage\Models\Hocphi
+defaultRedirect: xiso/homepage/hocphi
+create:
+    redirect: 'xiso/homepage/hocphi/update/:id'
+    redirectClose: xiso/homepage/hocphi
+update:
+    redirect: xiso/homepage/hocphi
+    redirectClose: xiso/homepage/hocphi

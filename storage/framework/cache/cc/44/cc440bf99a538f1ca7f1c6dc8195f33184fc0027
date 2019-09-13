@@ -1,0 +1,16 @@
+1568351332a:1:{s:15:"site/banner.htm";a:5:{s:8:"fileName";s:15:"site/banner.htm";s:7:"content";s:366:"
+<div class="section-banner">
+    <div class="wrap-banner">
+        <a href="{{'homepage' | page}}" title="Banner">
+            <img src="{{ 'assets/img/banner_desktop.png'|theme }}" class="d-none d-sm-block" alt="Banner">
+            <img src="{{ 'assets/img/banner_mobile.png'|theme}}" class="d-block d-sm-none" alt="Banner">
+        </a>
+    </div>
+</div>";s:5:"mtime";i:1568346456;s:6:"markup";s:364:"<div class="section-banner">
+    <div class="wrap-banner">
+        <a href="{{'homepage' | page}}" title="Banner">
+            <img src="{{ 'assets/img/banner_desktop.png'|theme }}" class="d-none d-sm-block" alt="Banner">
+            <img src="{{ 'assets/img/banner_mobile.png'|theme}}" class="d-block d-sm-none" alt="Banner">
+        </a>
+    </div>
+</div>";s:4:"code";N;}}

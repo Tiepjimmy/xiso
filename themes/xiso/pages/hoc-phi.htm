@@ -1,0 +1,97 @@
+url = "/hoc-phi"
+layout = 'homepage'
+[newsHocphi]
+[hocphi]
+[neworder]
+
+==
+    <div class="page-content animated fadeInRight">
+        <div class="wrap-text-page text-left">
+            <div class="container">
+                <div class="text-bottom">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="{{'homepage'| page}}"><img src="{{ 'assets/img/home.png'|theme}}" alt=""></a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <span>Học phí</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper-page">
+            <div class="container">
+                <div class="row">
+                    <!--Sidebar menu start-->
+                    <div class="col-lg-3">
+                       {% partial 'site/sidebar'%}
+                    </div>
+                    <!--Sidebar menu end-->
+
+                    <div class="col-lg-5">
+                        <div class="wrap-page-body">
+                            <div class="content-page">
+                                   {% component 'newsHocphi' %}
+                                <div class="txt-body">
+                                    <h2 class="pb-5">Bảng học phí chương trình XiSo</h2>
+                                    <div class="table-responsive table-responsive-tuition">
+                                        <table class="table table-striped table-tuition">
+                                            <thead class="thead-tuition">
+                                            <tr>
+                                                <th></th>
+                                                <th>Level</th>
+                                                <th>Đai</th>
+                                                <th>Môn học</th>
+                                                <th colspan="2" class="text-center">Hình thức đóng</th>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="4"></th>
+                                                <th>Theo môn</th>
+                                                <th>Theo đai</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            {% for hocphis in hocphi %}
+
+                                            <tr>
+                                                <td class="tbl-band-color">
+                                                    <div class="band-color"></div>
+                                                </td>
+                                                <td>
+                                                    {{hocphis.lever}}
+                                                </td>
+                                                <td>
+                                                    <span> {{hocphis.dai}}</span>
+                                                </td>
+                                                <td class="tbl-name">
+                                                    <div class="tbl-block-name">
+                                                        <p> {{hocphis.monhoc}}</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p>{{hocphis.theomon}}</p>
+                                                </td>
+                                                <td>
+                                                    <span>{{hocphis.theodai}}</span>
+                                                </td>
+                                            </tr>
+                                            {% endfor %}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Form sign up for advice start-->
+                    <div class="col-lg-4">
+                         {% partial 'site/sidebar-signup'%}
+                    </div>
+                    <!--Form sign up for advice end-->
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,196 @@
+1568351332a:1:{s:15:"site/footer.htm";a:6:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:3772:"==
+<div class="container">
+    <div class="footer-inner text-center">
+        {% if setting  %}
+        {% for set in setting %}
+        <div class="row">
+
+            <div class="widget-text col-lg-5 col-12">
+                <div class="logo--ft">
+                    <a href="{{ 'homepage'|page }}" title="Logo">
+                        <img src="{{set.image |media}}" class="d-lg-block d-none" alt="Logo">
+                        <img src="{{'assets/img/logo_tagline_transparent.png'|theme}}" class="d-lg-none d-block" alt="Logo">
+                    </a>
+                    <h5 class="slogan-ft">
+                      {{set.name}}
+                  </h5>
+              </div>
+          </div>
+          <div class="widget-text widget-link widget-col-small col-lg-3 col-sm-6">
+            <h3 class="text-title-ft">Link hữu ích</h3>
+            <ul>
+                <li>
+                    <i class="ion ion-ios-redo"></i>
+                    <a href="{{ 'chuongtrinhhoc'|page }}" title="Chương trình học">
+                        Chương trình học XiSo
+                    </a>
+                </li>
+                <li>
+                    <i class="ion ion-ios-redo"></i>
+                    <a href="{{ 'cach-hoc' | page }}" title="Cách học">
+                        Cách học
+                    </a>
+                </li>
+                <li>
+                    <i class="ion ion-ios-redo"></i>
+                    <a href="{{ 'tintuc' |page }}" title="Tin Tức">
+                        Tin tức
+                    </a>
+                </li>
+                <li>
+                    <i class="ion ion-ios-redo"></i>
+                    <a href="{{ 'hoc-phi' |page }}" title="Học phí">
+                        Học phí
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="widget-text widget-link widget-col-small col-lg-4 col-sm-6">
+            <h3 class="text-title-ft">Liên hệ với chúng tôi</h3>
+
+            <ul>
+
+                <li>
+                    <img src="{{'assets/img/school.png'|theme}}" alt="">
+                    <a href="#" title="Trường học trực tuyến Xiso">
+                        {{set.name}}
+                    </a>
+                </li>
+                <li>
+                    <img src="{{'assets/img/email.png'|theme}}" alt="Email"> Email:{{set.email}}
+                    <a href="#" title="Email">
+                    </a>
+                </li>
+                <li>
+                    <img src="{{ 'assets/img/telephone.png'|theme }}" alt="Hotline"> Hotline:
+                    <a href="#" title="Hotline">
+                        {{set.mobie}}
+                    </a>
+                </li>
+                <li>
+                    Kêt nối với chúng tôi:
+                    <a href="https://www.facebook.com/Truonglaptrinhtructuyen/" target="_blank" title="Liên hệ">
+                        <span class="fa fa-facebook-square"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    {% endfor %}
+    {% endif  %}
+    <a id="call_phone" title="Call phone" href="#"></a>
+</div>
+</div>
+
+<!--Support online-->
+<div id="fb-root"></div>
+<div id="cfacebook" class="messagebox">
+    <a href="javascript:void(0);" class="chat_fb" onclick="return false;"></a>
+    <div class="fchat">
+        <div style="width:250px;" class="fb-page" data-href="https://www.facebook.com/"
+        data-tabs="messages" data-width="260"
+        data-height="280" data-small-header="true">
+        <div class="fb-xfbml-parse-ignore">
+            <blockquote></blockquote>
+        </div>
+    </div>
+</div>
+</div>";s:5:"mtime";i:1568286629;s:6:"markup";s:3768:"<div class="container">
+    <div class="footer-inner text-center">
+        {% if setting  %}
+        {% for set in setting %}
+        <div class="row">
+
+            <div class="widget-text col-lg-5 col-12">
+                <div class="logo--ft">
+                    <a href="{{ 'homepage'|page }}" title="Logo">
+                        <img src="{{set.image |media}}" class="d-lg-block d-none" alt="Logo">
+                        <img src="{{'assets/img/logo_tagline_transparent.png'|theme}}" class="d-lg-none d-block" alt="Logo">
+                    </a>
+                    <h5 class="slogan-ft">
+                      {{set.name}}
+                  </h5>
+              </div>
+          </div>
+          <div class="widget-text widget-link widget-col-small col-lg-3 col-sm-6">
+            <h3 class="text-title-ft">Link hữu ích</h3>
+            <ul>
+                <li>
+                    <i class="ion ion-ios-redo"></i>
+                    <a href="{{ 'chuongtrinhhoc'|page }}" title="Chương trình học">
+                        Chương trình học XiSo
+                    </a>
+                </li>
+                <li>
+                    <i class="ion ion-ios-redo"></i>
+                    <a href="{{ 'cach-hoc' | page }}" title="Cách học">
+                        Cách học
+                    </a>
+                </li>
+                <li>
+                    <i class="ion ion-ios-redo"></i>
+                    <a href="{{ 'tintuc' |page }}" title="Tin Tức">
+                        Tin tức
+                    </a>
+                </li>
+                <li>
+                    <i class="ion ion-ios-redo"></i>
+                    <a href="{{ 'hoc-phi' |page }}" title="Học phí">
+                        Học phí
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="widget-text widget-link widget-col-small col-lg-4 col-sm-6">
+            <h3 class="text-title-ft">Liên hệ với chúng tôi</h3>
+
+            <ul>
+
+                <li>
+                    <img src="{{'assets/img/school.png'|theme}}" alt="">
+                    <a href="#" title="Trường học trực tuyến Xiso">
+                        {{set.name}}
+                    </a>
+                </li>
+                <li>
+                    <img src="{{'assets/img/email.png'|theme}}" alt="Email"> Email:{{set.email}}
+                    <a href="#" title="Email">
+                    </a>
+                </li>
+                <li>
+                    <img src="{{ 'assets/img/telephone.png'|theme }}" alt="Hotline"> Hotline:
+                    <a href="#" title="Hotline">
+                        {{set.mobie}}
+                    </a>
+                </li>
+                <li>
+                    Kêt nối với chúng tôi:
+                    <a href="https://www.facebook.com/Truonglaptrinhtructuyen/" target="_blank" title="Liên hệ">
+                        <span class="fa fa-facebook-square"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    {% endfor %}
+    {% endif  %}
+    <a id="call_phone" title="Call phone" href="#"></a>
+</div>
+</div>
+
+<!--Support online-->
+<div id="fb-root"></div>
+<div id="cfacebook" class="messagebox">
+    <a href="javascript:void(0);" class="chat_fb" onclick="return false;"></a>
+    <div class="fchat">
+        <div style="width:250px;" class="fb-page" data-href="https://www.facebook.com/"
+        data-tabs="messages" data-width="260"
+        data-height="280" data-small-header="true">
+        <div class="fb-xfbml-parse-ignore">
+            <blockquote></blockquote>
+        </div>
+    </div>
+</div>
+</div>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

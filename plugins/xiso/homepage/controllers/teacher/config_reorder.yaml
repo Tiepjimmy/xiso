@@ -1,0 +1,4 @@
+title: Teacher
+modelClass: Xiso\Homepage\Models\Teacher
+toolbar:
+    buttons: reorder_toolbar

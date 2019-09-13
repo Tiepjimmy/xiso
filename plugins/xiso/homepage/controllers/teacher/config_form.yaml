@@ -1,0 +1,10 @@
+name: Teacher
+form: $/xiso/homepage/models/teacher/fields.yaml
+modelClass: Xiso\Homepage\Models\Teacher
+defaultRedirect: xiso/homepage/teacher
+create:
+    redirect: 'xiso/homepage/teacher/update/:id'
+    redirectClose: xiso/homepage/teacher
+update:
+    redirect: xiso/homepage/teacher
+    redirectClose: xiso/homepage/teacher

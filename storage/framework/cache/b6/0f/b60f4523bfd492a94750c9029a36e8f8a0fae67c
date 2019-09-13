@@ -1,0 +1,7 @@
+1568351932a:1:{s:12:"hoc-bong.htm";a:9:{s:8:"fileName";s:12:"hoc-bong.htm";s:7:"content";s:102:"url = "/hoc-bong"
+layout = 'homepage'
+[hocbong]
+[neworder]
+==
+    
+    {% component 'hocbong' %}";s:5:"mtime";i:1568279693;s:6:"markup";s:25:"{% component 'hocbong' %}";s:4:"code";N;s:3:"url";s:9:"/hoc-bong";s:6:"layout";s:8:"homepage";s:7:"hocbong";a:0:{}s:8:"neworder";a:0:{}}}

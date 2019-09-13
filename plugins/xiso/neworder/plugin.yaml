@@ -1,0 +1,11 @@
+plugin:
+    name: 'xiso.neworder::lang.plugin.name'
+    description: 'xiso.neworder::lang.plugin.description'
+    author: Xiso
+    icon: oc-icon-cart-plus
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: NewsOrder
+        url: xiso/neworder/newsorder
+        icon: icon-cart-plus

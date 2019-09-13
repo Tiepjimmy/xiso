@@ -1,0 +1,151 @@
+1568351332a:1:{s:15:"site/header.htm";a:6:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:3524:"[setting]
+==
+<div class="header-wra{% component 'setting' %}pper">
+        <!--Header main menu start-->
+        <div class="header-main-wrapper"> 
+            <div class="container">
+                <div class="header-main-menu">
+                    <div class="slogan-content d-lg-none d-sm-block d-none">
+                        <span class="title-slogan">XiSo Lập trình online - Kiến tạo tương lai</span>
+                    </div>
+                    <!--Main menu start-->
+                    {% partial 'site/menu'%}
+                    <!--Main menu end-->
+                    <div class="mini-wrapper">
+                        <!--Register start-->
+                        <div class="mini-wrapper-box">
+                            <div class="mini-box-popup">
+                                <a href="{{'registration'|page }}" title="Đăng ký" class="btn btn-gnl-orange btn-register">
+                                    Đăng ký
+                                </a>
+                            </div>
+                        </div>
+                        <!--Register end-->
+                    </div>
+
+                    <!--Open or close mobile-->
+                    <a href="#js_menu" title="mobile button" class="mobile-button">
+                        <i class="ion ion-md-list"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--Header main menu end-->
+        <div class="header-main-bottom">
+            <div class="container">
+                <!--Logo start-->
+                <div class="logo">
+                    <a class="logo-link" href="{{'homepage' |page}}" title="Logo">
+                        <img src="{{ 'assets/img/logo_tagline.png'|theme }}" alt="Logo">
+                    </a>
+                </div>
+                <!--Logo end-->
+                <div class="slogan--search-qa">
+                    <div class="slogan-content d-lg-block d-none">
+                        <h1 class="title-slogan">XiSo Lập trình online - Kiến tạo tương lai</h1>
+                    </div>
+                    <div class="search-qa">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <div class="input-group-append">
+                                <button class="input-group-text" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="qa-and-phone">
+
+                            <li class="d-sm-block d-none">
+                                <img src="{{ 'assets/img/tel.png'|theme }}" alt="Phone">
+                                {% for set1 in setting %}
+                                <a href="tel:0981658329" title="Phone">set1.mobie</a>
+                                {% endfor %}
+                            </li>
+                            <li class="d-lg-table-cell d-none">
+                                <img src="{{ 'assets/img/question.png' |theme }}" alt="QA">
+                                <a href="{{ 'hoidap'|page }}" title="QA">Hỏi đáp</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--Banner start-->
+{% partial 'site/banner'%}
+<!--Banner end-->";s:5:"mtime";i:1568346554;s:6:"markup";s:3509:"<div class="header-wra{% component 'setting' %}pper">
+        <!--Header main menu start-->
+        <div class="header-main-wrapper"> 
+            <div class="container">
+                <div class="header-main-menu">
+                    <div class="slogan-content d-lg-none d-sm-block d-none">
+                        <span class="title-slogan">XiSo Lập trình online - Kiến tạo tương lai</span>
+                    </div>
+                    <!--Main menu start-->
+                    {% partial 'site/menu'%}
+                    <!--Main menu end-->
+                    <div class="mini-wrapper">
+                        <!--Register start-->
+                        <div class="mini-wrapper-box">
+                            <div class="mini-box-popup">
+                                <a href="{{'registration'|page }}" title="Đăng ký" class="btn btn-gnl-orange btn-register">
+                                    Đăng ký
+                                </a>
+                            </div>
+                        </div>
+                        <!--Register end-->
+                    </div>
+
+                    <!--Open or close mobile-->
+                    <a href="#js_menu" title="mobile button" class="mobile-button">
+                        <i class="ion ion-md-list"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--Header main menu end-->
+        <div class="header-main-bottom">
+            <div class="container">
+                <!--Logo start-->
+                <div class="logo">
+                    <a class="logo-link" href="{{'homepage' |page}}" title="Logo">
+                        <img src="{{ 'assets/img/logo_tagline.png'|theme }}" alt="Logo">
+                    </a>
+                </div>
+                <!--Logo end-->
+                <div class="slogan--search-qa">
+                    <div class="slogan-content d-lg-block d-none">
+                        <h1 class="title-slogan">XiSo Lập trình online - Kiến tạo tương lai</h1>
+                    </div>
+                    <div class="search-qa">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <div class="input-group-append">
+                                <button class="input-group-text" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="qa-and-phone">
+
+                            <li class="d-sm-block d-none">
+                                <img src="{{ 'assets/img/tel.png'|theme }}" alt="Phone">
+                                {% for set1 in setting %}
+                                <a href="tel:0981658329" title="Phone">set1.mobie</a>
+                                {% endfor %}
+                            </li>
+                            <li class="d-lg-table-cell d-none">
+                                <img src="{{ 'assets/img/question.png' |theme }}" alt="QA">
+                                <a href="{{ 'hoidap'|page }}" title="QA">Hỏi đáp</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--Banner start-->
+{% partial 'site/banner'%}
+<!--Banner end-->";s:4:"code";N;s:7:"setting";a:0:{}}}

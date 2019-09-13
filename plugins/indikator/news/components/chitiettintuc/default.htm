@@ -1,0 +1,77 @@
+{% set threepost = __SELF__.threepost %}
+
+
+<div class="page-content animated fadeInRight">
+        <div class="wrap-text-page text-center">
+            <div class="container">
+                <div class="text-bottom">
+                    <img src="{{ 'assets/img/user.png'|theme}}" alt="">
+                    <span>{{post.title}}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper-page">
+            <div class="container">
+                <div class="row">
+                    <!--Sidebar menu start-->
+                    <div class="col-lg-3">
+                        <div class="sidebar-collapse">
+                            <div class="back-to-news nav-link">
+                                <a href="{{ 'tintuc'|page}}" title="" class="link-to-news">
+                                    <i class="ion ion-md-arrow-back"></i>
+                                    <span>Quay lại trang tin tức</span>
+                                </a>
+                            </div>
+                            <div class="nav-link block-share">
+                                <span>Chia sẻ trang này</span>
+                                <p class="icon--fnt">
+                                    <a href="https://www.facebook.com/Truonglaptrinhtructuyen/?__tn__=%2Cd%2CP-R&eid=ARAIU3rqsDSUSYdwLnw30-d24qRBVbJzTkPytgM3oqqUgjJmbWF6pTu-HYX7DJPUzFWq1gLNI-_Hk5kV" title="" class="_icon _icon-fb">
+                                        <i class="fa fa-facebook-square"></i>
+                                    </a>
+                                    <a href="#" title="" class="_icon _icon-print">
+                                        <i class="fa fa-print"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Sidebar menu end-->
+                    <div class="col-lg-9">
+                        <div class="wrap-page-body">
+                            <div class="content-page">
+                                <div class="blog-detail">
+                                    <div class="title-header-top">
+                                        <h1 class="title-inner">{{post.title}}</h1>
+                                        <p class="date">
+                                            <span>{{ post.published_at|date('H-m') }}</span>
+                                            <span>{{ post.published_at|date('d-m-Y') }}</span>
+                                        </p>
+                                    </div>
+                                    <div class="detail">
+                                        <p>
+                                          {{html_limit(post.introductory, 7000) | raw}}
+                                        </p>
+                                        </div>
+
+                                    <div class="relate-blog">
+                                        <h3 class="title-relate-blog">Bài liên quan</h3>
+                                        <ul class="list-relate-blog">
+                                            {% for threeposts in threepost%}
+                                            <li class="item-relate">
+                                                <a href="{{ 'tin-tuc' | page({slug:threeposts.slug})}}" title="">
+                                                    <span>{{threeposts.title}}</span>
+                                                    <span class="day">{{ threeposts.published_at|date('d-m-Y') }}</span>
+                                                </a>
+                                            </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

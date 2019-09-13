@@ -1,0 +1,59 @@
+1568255209a:1:{s:18:"singup-success.htm";a:5:{s:8:"fileName";s:18:"singup-success.htm";s:7:"content";s:1324:"<!-- url = "/singup-success"
+layout = 'homepage'
+== -->
+<!--Popup sign up success start-->
+<!-- <div class="modal popup-signup-success popup-common" id="js_popup_signup_success">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Thông tin của bạn đã được gửi thành công!</h4>
+                <span class="icon"><i class="ion ion-md-checkmark-circle"></i></span>
+            </div>
+            <div class="modal-body text-center">
+                <div class="text pb-30">
+                    <p>
+                        XiSo sẽ liên hệ lại với bạn trong vòng 24h qua số điện thoại 098-165-8329
+                    </p>
+                    <p>
+                        Bạn chú ý điện thoại và email thường xuyên để tránh bỏ lỡ các thông tin quan trọng về việc học tập
+                        của con!
+                    </p>
+                </div>
+                <div class="button-option mb-15">
+                    <a href="/" class="btn-general mr-5 btn-backhome">Trở về trang chủ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Popup sign up success end-->
+
+";s:5:"mtime";i:1568253339;s:6:"markup";s:1320:"<!-- url = "/singup-success"
+layout = 'homepage'
+== -->
+<!--Popup sign up success start-->
+<!-- <div class="modal popup-signup-success popup-common" id="js_popup_signup_success">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Thông tin của bạn đã được gửi thành công!</h4>
+                <span class="icon"><i class="ion ion-md-checkmark-circle"></i></span>
+            </div>
+            <div class="modal-body text-center">
+                <div class="text pb-30">
+                    <p>
+                        XiSo sẽ liên hệ lại với bạn trong vòng 24h qua số điện thoại 098-165-8329
+                    </p>
+                    <p>
+                        Bạn chú ý điện thoại và email thường xuyên để tránh bỏ lỡ các thông tin quan trọng về việc học tập
+                        của con!
+                    </p>
+                </div>
+                <div class="button-option mb-15">
+                    <a href="/" class="btn-general mr-5 btn-backhome">Trở về trang chủ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Popup sign up success end-->";s:4:"code";N;}}

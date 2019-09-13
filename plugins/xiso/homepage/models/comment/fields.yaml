@@ -1,0 +1,21 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        type: text
+    year:
+        label: Year
+        span: auto
+        type: text
+    content:
+        label: Content
+        size: huge
+        span: full
+        type: richeditor
+    image:
+        label: Image
+        mode: image
+        imageWidth: '150'
+        imageHeight: '150'
+        span: full
+        type: mediafinder

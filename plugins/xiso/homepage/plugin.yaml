@@ -1,0 +1,42 @@
+plugin:
+    name: 'xiso.homepage::lang.plugin.name'
+    description: 'xiso.homepage::lang.plugin.description'
+    author: Xiso
+    icon: oc-icon-home
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Home
+        url: xiso/homepage/info
+        icon: icon-home
+        permissions:
+            - homepage.full
+        sideMenu:
+            side-menu-item8:
+                label: Introduce
+                url: xiso/homepage/info
+                icon: icon-home
+            side-menu-item:
+                label: Teacher
+                url: xiso/homepage/teacher
+                icon: icon-user
+            side-menu-item2:
+                label: Banner
+                url: xiso/homepage/banner
+                icon: icon-image
+            side-menu-item3:
+                label: 'Question and answer'
+                url: xiso/homepage/hoidap
+                icon: icon-whatsapp
+            side-menu-item4:
+                label: Setting
+                url: xiso/homepage/setting
+                icon: icon-wrench
+            side-menu-item5:
+                label: Tuition
+                url: xiso/homepage/hocphi
+                icon: icon-bank
+            side-menu-item6:
+                label: Comment
+                url: xiso/homepage/comment
+                icon: icon-wechat

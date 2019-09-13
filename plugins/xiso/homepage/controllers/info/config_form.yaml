@@ -1,0 +1,10 @@
+name: Info
+form: $/xiso/homepage/models/info/fields.yaml
+modelClass: Xiso\Homepage\Models\Info
+defaultRedirect: xiso/homepage/info
+create:
+    redirect: 'xiso/homepage/info/update/:id'
+    redirectClose: xiso/homepage/info
+update:
+    redirect: xiso/homepage/info
+    redirectClose: xiso/homepage/info

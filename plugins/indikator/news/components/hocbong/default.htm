@@ -1,0 +1,64 @@
+{% set hocbong = __SELF__.hocbong %}
+{% set hocbongs = __SELF__.hocbongs %}
+
+<div class="page-content animated fadeInRight">
+    <div class="wrap-text-page text-left">
+        <div class="container">
+            <div class="text-bottom">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="{{'homepage'|page}}"><img src="{{ 'assets/img/home.png'|theme}}" alt=""></a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        <span>{{hocbongs.name}}</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper-page">
+        <div class="container">
+            <div class="row">
+                <!--Sidebar menu start-->
+                <div class="col-lg-3">
+                    {% partial 'site/sidebar'%}
+                </div>
+                <!--Sidebar menu end-->
+
+                <div class="col-lg-5">
+                    <div class="wrap-page-body">
+                        <div class="content-page">
+                            <div class="txt-head-body">
+                                <h1 class="title-page title-page-bb">
+                                   {{hocbongs.name}}
+                                </h1>
+                                <p>
+                                </p>
+                            </div>
+                            {%for Hocbong in hocbong%}
+                            <div class="txt-body">
+                                <h2>{{Hocbong.title}}</h2>
+                                <p>
+                                 {{html_limit(Hocbong.introductory,150) | raw}}
+                              </p>
+
+                          </div>
+                          {%endfor%}
+                          
+                          <div class="txt-body text-center">
+                            <a data-mobi="#js_frm_signup" data-desktop="{{'registration'|page}}" id="btn-register" href="{{'registration'|page}}" title="Đăng kí học" class="btn-regis-learn btn-general">Đăng kí học</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Form sign up for advice start-->
+            <div class="col-lg-4">
+                {% partial 'site/sidebar-signup'%}
+            </div>
+            <!--Form sign up for advice end-->
+        </div>
+    </div>
+</div>
+</div>

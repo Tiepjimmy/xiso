@@ -1,0 +1,28 @@
+columns:
+    id:
+        label: ID
+        type: number
+        searchable: true
+        sortable: true
+    name:
+        label: Name
+        type: text
+        searchable: true
+        sortable: true
+    info:
+        label: Info
+        type: text
+        searchable: true
+        sortable: true
+    image:
+        label: Images
+        type: partial
+        path: ~/plugins/xiso/homepage/models/teacher/_image.htm
+    content:
+        label: Content
+        type: text
+    education:
+        label: Education
+        type: text
+        searchable: true
+        sortable: true

@@ -1,0 +1,12 @@
+{% set category = __SELF__.category %}
+
+
+
+  <div class="txt-head-body">
+  	<h1 class="title-page title-page-bb">
+  		{{html_strip(category.name)}}
+  	</h1>
+  	<p>
+  		{{html_strip(category.content)}}
+  	</p>
+  </div>

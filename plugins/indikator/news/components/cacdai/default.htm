@@ -1,0 +1,71 @@
+
+{% set cacdai = __SELF__.cacdai %}
+{% set category = __SELF__.category %}
+
+<div class="page-content animated fadeInRight">
+	<div class="wrap-text-page text-left">
+		<div class="container">
+			<div class="text-bottom">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item">
+						<a href="{{ 'homepage' |theme }}"><img src="{{ 'assets/img/home.png'|theme}}" alt=""></a>
+					</li>
+					<li class="breadcrumb-item active">
+						<span>	{{category.name}}</span>
+					</li>
+					<li class="breadcrumb-item">
+						<span>{{post.title}}</span>
+					</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrapper-page">
+		<div class="container">
+			<div class="row">
+				<!--Sidebar menu start-->
+				<div class="col-lg-3">
+					{% partial 'site/sidebar'%}
+				</div>
+				<!--Sidebar menu end-->
+
+				<div class="col-lg-5">
+					<div class="wrap-page-body">
+						<div class="content-page">
+							<div class="txt-head-body">
+								<h1 class="title-page title-page-bb">
+									{{category.name}}
+								</h1>
+								<p>
+									{{category.content |raw}}
+								</p>
+							</div>
+							<div class="ibox-content" id="ibox-content">
+                                <div id="vertical_band" class="vertical-container center-orientation">
+                                    {%for dai in cacdai%}
+                                    <div class="vertical-band-block">
+                                        <div class="vertical-band-content band-white">
+                                            <a href="{{'chuong-trinh-hoc' |page({slug:dai.slug})}}" class="link-content">
+                                                <div class="img">
+                                                    <img src="{{ dai.image |media}}" class="wow swing" alt="" style="visibility: visible; animation-name: swing;">
+                                                </div>
+                                                <h2 class="title">{{dai.title}}</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                     {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Form sign up for advice start-->
+                <div class="col-lg-4">
+                   {% partial 'site/sidebar-signup'%}
+               </div>
+               <!--Form sign up for advice end-->
+           </div>
+       </div>
+   </div>
+</div>

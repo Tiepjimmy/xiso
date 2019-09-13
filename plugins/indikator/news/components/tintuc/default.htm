@@ -1,0 +1,135 @@
+
+{% set postone = __SELF__.postone %}
+{% set listpost = __SELF__.listpost %}
+<div class="page-content animated fadeInRight">
+    <div class="wrap-text-page text-center">
+        <div class="container">
+            <div class="text-bottom">
+                <img src="{{ 'assets/img/user.png'|theme }}" alt="">
+                <span>Là học sinh muốn học lập trình nhưng không có tiền</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-news section-news-area">
+        <div class="container">
+            <div class="content-news">
+                <div class="news-header-title mb-30">
+                    <h2 class="title-inner news-title">Bản tin XiSo</h2>
+                    <a href="#" title="" class="btn read-more">Cập nhật tin tức từ XiSo</a>
+                </div>
+
+                <div class="content-news-slide">
+                    <!--Slide carousel start-->
+                    <div class="js-slides owl-carousel">
+                        <!--New slide item start-->
+                        {% for key, postone1  in postone %}
+                        <div class="new-slide-content">
+                            {% for key1, value in postone1.data  %}
+                            {% if key1 == 0 %}
+                            <div class="row row-new-first row-new-item">
+                                <div class="col-new-first col-lg-6">
+                                    <div class="new-image">
+                                        <a href="{{ 'tin-tuc' | page({slug:value.slug})}}" title="" class="new-img hover-link">
+                                            <img src="{{value.image | media }}" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-new-first col-lg-6">
+                                    <div class="new-detail-item">
+                                        <div class="new-item">
+                                            <a href="{{ 'tin-tuc' | page({slug:value.slug})}}" title="">
+                                                <h3 class="title-new title__2 clamp__4 small-clamp_3">
+                                                    {{value.title}}
+                                                </h3>
+                                            </a>
+                                            <p class="clamp__3">
+                                                {{html_strip(value.introductory)| raw}}
+                                            </p>
+                                        </div>
+                                        <a href="{{ 'tin-tuc' | page({slug:value.slug})}}" class="view-item-detail" title="Chi tiết">Chi tiết</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-new-second row-new-item">
+                                {% else %}
+                                <div class="col-new-second col-lg-6">
+                                    <div class="content-new-detail-item --flex-sd">
+                                        <div class="new-image">
+                                            <a href="{{ 'tin-tuc' | page({slug:value.slug})}}" title="" class="new-img hover-link">
+                                                <img src="{{value.image | media }}" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="new-detail-item">
+                                            <div class="new-item">
+                                                <a href="{{ 'tin-tuc' | page({slug:value.slug})}}" title="">
+                                                    <h3 class="title-new title__2 clamp__4 small-clamp_3">
+                                                        {{value.title}}
+                                                    </h3>
+                                                </a>
+                                                <p class="clamp__3">
+                                                   {{html_strip(value.introductory)| raw}}
+                                               </p>
+                                           </div>
+                                           <a href="{{ 'tin-tuc' | page({slug:value.slug})}}" class="view-item-detail" title="Chi tiết">Chi tiết</a>
+                                       </div>
+                                   </div>
+                               </div>
+                               {% endif%}
+                               {% if key1 + 1 == postone1.count%}
+                           </div>
+                           {%endif%}
+                           {% endfor%}
+                       </div>
+                       {% endfor%}
+
+
+
+
+                       <!--New slide item end-->
+                   </div>
+                   <!--Slide carousel end-->
+               </div>
+           </div>
+           <div class="line line-bottom l-t"></div>
+           {% for allpost in listpost %}
+          <div class="wrapper-blog"> 
+            <!--Blog item start-->
+
+            <div class="row row-blog">
+              <div class="col-blog col-lg-4 col-md-5">
+                    <a title="{{ 'tin-tuc' | page({slug:allpost.slug})}}" href="{{ 'tin-tuc' | page({slug:allpost.slug})}}" class="img">
+                        <img src="{{allpost.image | media}}" alt="">
+                    </a>
+              </div>
+              <div class="col-blog col-lg-8 col-md-7">
+                  <div class="content-blog">
+                        <div class="title-blog">
+                            <a href="{{ 'tin-tuc' | page({slug:allpost.slug})}}" title="">
+                                <h3 class="title-inner clamp__2">
+                                   {{allpost.title }}
+                               </h3>
+                           </a>
+                           <span class="date"> {{ allpost.published_at|date('d-m-Y') }}</span>
+                       </div>
+
+                         <p class="short-text clamp__3">
+                          {{html_strip(allpost.introductory,150)}}
+                          </p>
+                </div>
+              </div>
+              <div class="col-12">
+                  <div class="line line-gray"></div>
+              </div>
+
+        </div>
+        {%endfor%}
+        <!--Blog item end-->
+        <div class="view-more text-center" id="listrecord">
+            <div   class="link-view-more btn-general" title="Xem thêm">Xem thêm</div>
+        </div>
+    </div>
+
+</div>
+</div>
+</div>

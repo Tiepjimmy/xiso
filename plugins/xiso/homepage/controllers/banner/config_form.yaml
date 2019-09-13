@@ -1,0 +1,10 @@
+name: Banner
+form: $/xiso/homepage/models/banner/fields.yaml
+modelClass: Xiso\Homepage\Models\Banner
+defaultRedirect: xiso/homepage/banner
+create:
+    redirect: 'xiso/homepage/banner/update/:id'
+    redirectClose: xiso/homepage/banner
+update:
+    redirect: xiso/homepage/banner
+    redirectClose: xiso/homepage/banner

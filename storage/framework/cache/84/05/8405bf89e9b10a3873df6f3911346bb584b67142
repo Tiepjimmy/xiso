@@ -1,0 +1,151 @@
+1568351932a:1:{s:10:"hoidap.htm";a:9:{s:8:"fileName";s:10:"hoidap.htm";s:7:"content";s:3730:"url = "/hoidap"
+layout = 'homepage'
+[hoidap]
+[neworder]
+==
+    <div class="page-content animated fadeInRight">
+        <div class="wrap-text-page text-left">
+            <div class="container">
+                <div class="text-bottom">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="{{ 'homepage' |page }}"><img src="{{ 'assets/img/home.png'|theme }}" alt=""></a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <span>Câu hỏi thường gặp</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper-page">
+            <div class="container">
+                <div class="row">
+                    <!--Sidebar menu start-->
+                    <div class="col-lg-3">
+                        {% partial 'site/sidebar'%}
+                    </div>
+                    <!--Sidebar menu end-->
+
+                    <div class="col-lg-5">
+                        <div class="wrap-page-body">
+                            <div class="content-page">
+                                <div class="txt-head-body">
+                                    <h1 class="title-page title-page-bb">
+                                        Câu hỏi thường gặp
+                                    </h1>
+                                </div>
+                                <div class="content-question accordion">
+                                    <!--Card start-->
+                                    {%for thacmac in hoidap %}
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link collapsed" data-toggle="collapse" href="#fqa__1" aria-expanded="false">
+                                                    <div class="fqa--flex">
+                                                        <div class="img">
+                                                            <span class="number-left">{{thacmac.id}}</span>
+                                                        </div>
+                                                        <span class="titl">{{thacmac.name}}</span>
+                                                    </div>
+                                                    <i class="ion ion-md-remove-circle icon add-circle"></i>
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        <div id="fqa__1" class="collapse" style="">
+                                            <div class="card-body">
+                                              {{thacmac.content}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                     
+                                    <!--Card end-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Form sign up for advice start-->
+                    <div class="col-lg-4">
+                        {% partial 'site/sidebar-signup'%}
+                    </div>
+                    <!--Form sign up for advice end-->
+                </div>
+            </div>
+        </div>
+    </div>
+";s:5:"mtime";i:1568280812;s:6:"markup";s:3660:"<div class="page-content animated fadeInRight">
+        <div class="wrap-text-page text-left">
+            <div class="container">
+                <div class="text-bottom">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="{{ 'homepage' |page }}"><img src="{{ 'assets/img/home.png'|theme }}" alt=""></a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <span>Câu hỏi thường gặp</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper-page">
+            <div class="container">
+                <div class="row">
+                    <!--Sidebar menu start-->
+                    <div class="col-lg-3">
+                        {% partial 'site/sidebar'%}
+                    </div>
+                    <!--Sidebar menu end-->
+
+                    <div class="col-lg-5">
+                        <div class="wrap-page-body">
+                            <div class="content-page">
+                                <div class="txt-head-body">
+                                    <h1 class="title-page title-page-bb">
+                                        Câu hỏi thường gặp
+                                    </h1>
+                                </div>
+                                <div class="content-question accordion">
+                                    <!--Card start-->
+                                    {%for thacmac in hoidap %}
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link collapsed" data-toggle="collapse" href="#fqa__1" aria-expanded="false">
+                                                    <div class="fqa--flex">
+                                                        <div class="img">
+                                                            <span class="number-left">{{thacmac.id}}</span>
+                                                        </div>
+                                                        <span class="titl">{{thacmac.name}}</span>
+                                                    </div>
+                                                    <i class="ion ion-md-remove-circle icon add-circle"></i>
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        <div id="fqa__1" class="collapse" style="">
+                                            <div class="card-body">
+                                              {{thacmac.content}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                     
+                                    <!--Card end-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Form sign up for advice start-->
+                    <div class="col-lg-4">
+                        {% partial 'site/sidebar-signup'%}
+                    </div>
+                    <!--Form sign up for advice end-->
+                </div>
+            </div>
+        </div>
+    </div>";s:4:"code";N;s:3:"url";s:7:"/hoidap";s:6:"layout";s:8:"homepage";s:6:"hoidap";a:0:{}s:8:"neworder";a:0:{}}}

@@ -1,0 +1,4 @@
+title: Setting
+modelClass: Xiso\Homepage\Models\Setting
+toolbar:
+    buttons: reorder_toolbar

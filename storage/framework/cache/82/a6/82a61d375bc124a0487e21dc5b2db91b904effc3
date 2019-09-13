@@ -1,0 +1,316 @@
+1568351932a:1:{s:12:"homepage.htm";a:10:{s:8:"fileName";s:12:"homepage.htm";s:7:"content";s:8409:"url = "/"
+layout = 'homepage'
+[info] 
+[comment]
+[tintuc]
+==
+<div class="page-content animated fadeInRight">
+    <div class="wrap-text-page text-center">
+        <div class="container">
+            <div class="text-bottom">
+                <img src="img/user.png" alt="">
+                <span>Là học sinh muốn học lập trình nhưng không có tiền</span>
+            </div>
+        </div>
+    </div>
+    <!--Utilities start-->
+    <div class="section-utilities">
+        <div class="container">
+            <h2 class="title-inner title-bdr_bf__top">Tại sao nên chọn XiSo?</h2>
+            <div class="row row-utilities">
+
+                {%for gt in info %}
+                <div class="col-utilities col-md-4 col-sm-6">
+                    <div class="item-utilities">
+                        <div class="img-item wow pulse" data-wow-iteration="2">
+                            <img src="{{ gt.image | media}}" alt="icon_home">
+                        </div>
+                        <div class="text-item">
+                            <h2 class="title__2">{{ html_strip(gt.name)|raw}}</h2>
+                            <p class="clamp__6 wow fadeInDown">
+                                {{ html_strip(gt.content) |raw }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor%}
+            </div>
+        </div>
+    </div>
+    <!--Utilities end-->
+    <!--List students start-->
+
+    <div class="section-list-students">
+        <div class="container">
+            <div class="row row-list-students">
+                <!--Student item start-->
+                {%for binhluan in comment %}
+                <div class="col-student col-md-4 col-sm-6">
+                    <div class="student-wrap wow fadeInUp">
+                        <div class="student-img">
+                            <a href="#" title="">
+                                <img src="{{ binhluan.image |media}}" alt="">
+                            </a>
+                        </div>
+                        <div class="student-content">
+                            <div class="hover-content text-detail-content">
+                                <p class="clamp__5 small-clamp_3">
+                                 {{ html_strip(binhluan.content)|raw }}
+                             </p>
+                         </div>
+                         <div class="title-student-show text-center">
+                            <a href="#" title="">
+                                <h3 class="title__2 tt-student">
+                                    {{ html_strip(binhluan.name)|raw }}
+                                </h3>
+                            </a>
+                            <p class="short-detail">{{ binhluan.year }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Student item end-->
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+<!--List students end-->
+<!--News start-->
+<div class="section-news">
+    <div class="container">
+        <div class="wrapper-news">
+            <div class="content-news">
+                <div class="news-header-title">
+                    <h2 class="title-inner news-title">Tin tức</h2>
+                    <a href="{{'tintuc'|page}}" title="Đọc thêm" class="btn read-more">Đọc thêm</a>
+                </div>
+                <div class="content-news-slide wow fadeInUp">
+                    <!--Slide carousel start-->
+                    <div class="js-slides owl-carousel">
+                        <!--New slide item start-->
+                          {% for key, postone1  in postone %}
+                            <div class="new-slide-content">
+                                {% for key1, value in postone1.data  %}
+                                    {% if key1 == 0 %}
+                                        <div class="row row-new-first row-new-item">
+                                            <div class="col-new-first col-lg-6">
+                                                <div class="new-image">
+                                                    <a href="{{ 'tin-tuc' | page({slug:value.slug})}}" title="" class="new-img hover-link">
+                                                        <img src="{{value.image | media }}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-new-first col-lg-6">
+                                                <div class="new-detail-item">
+                                                    <div class="new-item">
+                                                        <a href="{{ 'tin-tuc' | page({slug:value.slug})}}" title="">
+                                                            <h3 class="title-new title__2 clamp__4 small-clamp_3">
+                                                                {{value.title}}
+                                                            </h3>
+                                                        </a>
+                                                        <p class="clamp__3">
+                                                            {{html_strip(value.introductory)| raw}}
+                                                        </p>
+                                                    </div>
+                                                    <a href="{{ 'tin-tuc' | page({slug:value.slug})}}" class="view-item-detail" title="Chi tiết">Chi tiết</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row row-new-second row-new-item">
+                                    {% else %}
+                                        <div class="col-new-second col-lg-6">
+                                            <div class="content-new-detail-item --flex-sd">
+                                                <div class="new-image">
+                                                    <a href="{{ 'tin-tuc' | page({slug:value.slug})}}" title="" class="new-img hover-link">
+                                                        <img src="{{value.image | media }}" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="new-detail-item">
+                                                    <div class="new-item">
+                                                        <a href="{{ 'tin-tuc' | page({slug:value.slug})}}" title="">
+                                                            <h3 class="title-new title__2 clamp__4 small-clamp_3">
+                                                                {{value.title}}
+                                                            </h3>
+                                                        </a>
+                                                        <p class="clamp__3">
+                                                                 {{html_strip(value.introductory)| raw}}
+                                                        </p>
+                                                    </div>
+                                                    <a href="{{ 'tin-tuc' | page({slug:value.slug})}}" class="view-item-detail" title="Chi tiết">Chi tiết</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endif%}
+                                    {% if key1 + 1 == postone1.count%}
+                                    </div>
+                                    {%endif%}
+                                {% endfor%}
+                            </div>
+                        {% endfor%}
+                    
+                    </div>
+                    <!--Slide carousel end-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--News end-->
+</div>
+";s:5:"mtime";i:1568275518;s:6:"markup";s:8341:"<div class="page-content animated fadeInRight">
+    <div class="wrap-text-page text-center">
+        <div class="container">
+            <div class="text-bottom">
+                <img src="img/user.png" alt="">
+                <span>Là học sinh muốn học lập trình nhưng không có tiền</span>
+            </div>
+        </div>
+    </div>
+    <!--Utilities start-->
+    <div class="section-utilities">
+        <div class="container">
+            <h2 class="title-inner title-bdr_bf__top">Tại sao nên chọn XiSo?</h2>
+            <div class="row row-utilities">
+
+                {%for gt in info %}
+                <div class="col-utilities col-md-4 col-sm-6">
+                    <div class="item-utilities">
+                        <div class="img-item wow pulse" data-wow-iteration="2">
+                            <img src="{{ gt.image | media}}" alt="icon_home">
+                        </div>
+                        <div class="text-item">
+                            <h2 class="title__2">{{ html_strip(gt.name)|raw}}</h2>
+                            <p class="clamp__6 wow fadeInDown">
+                                {{ html_strip(gt.content) |raw }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor%}
+            </div>
+        </div>
+    </div>
+    <!--Utilities end-->
+    <!--List students start-->
+
+    <div class="section-list-students">
+        <div class="container">
+            <div class="row row-list-students">
+                <!--Student item start-->
+                {%for binhluan in comment %}
+                <div class="col-student col-md-4 col-sm-6">
+                    <div class="student-wrap wow fadeInUp">
+                        <div class="student-img">
+                            <a href="#" title="">
+                                <img src="{{ binhluan.image |media}}" alt="">
+                            </a>
+                        </div>
+                        <div class="student-content">
+                            <div class="hover-content text-detail-content">
+                                <p class="clamp__5 small-clamp_3">
+                                 {{ html_strip(binhluan.content)|raw }}
+                             </p>
+                         </div>
+                         <div class="title-student-show text-center">
+                            <a href="#" title="">
+                                <h3 class="title__2 tt-student">
+                                    {{ html_strip(binhluan.name)|raw }}
+                                </h3>
+                            </a>
+                            <p class="short-detail">{{ binhluan.year }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Student item end-->
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+<!--List students end-->
+<!--News start-->
+<div class="section-news">
+    <div class="container">
+        <div class="wrapper-news">
+            <div class="content-news">
+                <div class="news-header-title">
+                    <h2 class="title-inner news-title">Tin tức</h2>
+                    <a href="{{'tintuc'|page}}" title="Đọc thêm" class="btn read-more">Đọc thêm</a>
+                </div>
+                <div class="content-news-slide wow fadeInUp">
+                    <!--Slide carousel start-->
+                    <div class="js-slides owl-carousel">
+                        <!--New slide item start-->
+                          {% for key, postone1  in postone %}
+                            <div class="new-slide-content">
+                                {% for key1, value in postone1.data  %}
+                                    {% if key1 == 0 %}
+                                        <div class="row row-new-first row-new-item">
+                                            <div class="col-new-first col-lg-6">
+                                                <div class="new-image">
+                                                    <a href="{{ 'tin-tuc' | page({slug:value.slug})}}" title="" class="new-img hover-link">
+                                                        <img src="{{value.image | media }}" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-new-first col-lg-6">
+                                                <div class="new-detail-item">
+                                                    <div class="new-item">
+                                                        <a href="{{ 'tin-tuc' | page({slug:value.slug})}}" title="">
+                                                            <h3 class="title-new title__2 clamp__4 small-clamp_3">
+                                                                {{value.title}}
+                                                            </h3>
+                                                        </a>
+                                                        <p class="clamp__3">
+                                                            {{html_strip(value.introductory)| raw}}
+                                                        </p>
+                                                    </div>
+                                                    <a href="{{ 'tin-tuc' | page({slug:value.slug})}}" class="view-item-detail" title="Chi tiết">Chi tiết</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row row-new-second row-new-item">
+                                    {% else %}
+                                        <div class="col-new-second col-lg-6">
+                                            <div class="content-new-detail-item --flex-sd">
+                                                <div class="new-image">
+                                                    <a href="{{ 'tin-tuc' | page({slug:value.slug})}}" title="" class="new-img hover-link">
+                                                        <img src="{{value.image | media }}" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="new-detail-item">
+                                                    <div class="new-item">
+                                                        <a href="{{ 'tin-tuc' | page({slug:value.slug})}}" title="">
+                                                            <h3 class="title-new title__2 clamp__4 small-clamp_3">
+                                                                {{value.title}}
+                                                            </h3>
+                                                        </a>
+                                                        <p class="clamp__3">
+                                                                 {{html_strip(value.introductory)| raw}}
+                                                        </p>
+                                                    </div>
+                                                    <a href="{{ 'tin-tuc' | page({slug:value.slug})}}" class="view-item-detail" title="Chi tiết">Chi tiết</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endif%}
+                                    {% if key1 + 1 == postone1.count%}
+                                    </div>
+                                    {%endif%}
+                                {% endfor%}
+                            </div>
+                        {% endfor%}
+                    
+                    </div>
+                    <!--Slide carousel end-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--News end-->
+</div>";s:4:"code";N;s:3:"url";s:1:"/";s:6:"layout";s:8:"homepage";s:4:"info";a:0:{}s:7:"comment";a:0:{}s:6:"tintuc";a:0:{}}}

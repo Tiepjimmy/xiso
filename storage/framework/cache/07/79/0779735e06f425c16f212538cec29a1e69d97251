@@ -1,0 +1,179 @@
+1568351932a:1:{s:10:"mentor.htm";a:8:{s:8:"fileName";s:10:"mentor.htm";s:7:"content";s:3950:"url = "/mentor"
+layout = 'homepage'
+[teacher]
+==
+<div class="page-content animated fadeInRight">
+    <div class="wrap-text-page text-left">
+        <div class="container">
+            <div class="text-bottom">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="{{ 'homepage'}}"><img src="{{ 'assets/img/home.png'|theme }}" alt=""></a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        <span>Mentor tiêu biểu</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper-page">
+        <div class="container">
+            <div class="wrapper-mentor">
+                <div class="header-mentor">
+                    <h1 class="title-inner title-mentor">Danh sách các mentor</h1>
+                    <h2 class="title__2 title-mtor-2">Sẽ đồng hành cùng con bạn</h2>
+                </div>
+                
+                <div class="content-mentor">
+                    <ul class="list-mentor-boxes">
+                        <!--Mentor item start-->
+                        {%for key, teachers in teacher %}
+                        <li class="mentor-box">
+                            <div id="teacher" data-id="{{teachers.id}}" title="" class="mentor-item">
+                                <div class="img bg-mentor-img">
+                                    <img class="bg-mentor-image" src="{{
+                                    key  == 0 or key == 5 ? 'assets/img/mt1.png'|theme : 
+                                    key  == 1 or key == 6 ? 'assets/img/mt2.png'|theme : 
+                                    key  == 2 or key == 7 ? 'assets/img/mt3.png'|theme :
+                                    key  == 3 or key == 8 ? 'assets/img/mt4.png'|theme :
+                                    key  == 4 or key == 9 ? 'assets/img/mt5.png'|theme }}" alt=""> 
+                                    <div class="mentor-front">
+                                        <img src="{{teachers.image | media }}" alt="">
+                                    </div>
+                                </div>
+                                <span class="txt-dt">{{teachers.info}}</span>
+                                <h3 class="title__2">{{teachers.name}}</h3>
+                            </a>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<!--Popup mentor start-->
+<div class="modal popup-mentor popup-common" id="popup_mentor">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="ion ion-ios-close"></i>
+            </button>
+            <div class="modal-body">
+                <div class="row align-items-center">
+                    <div class="col-left-mentor col-sm-4">
+                        <span class="icon">
+                            <i class="fa fa-quote-left"></i>
+                        </span>
+                        <div class="mentor-box ">
+                            <div class="img img-mentor">
+                                <img src="" alt="">
+                            </div>
+                            <span class="txt-dt"></span>
+                            <h3 class="title__2"></h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="text text-mentor">
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>";s:5:"mtime";i:1568346936;s:6:"markup";s:3897:"<div class="page-content animated fadeInRight">
+    <div class="wrap-text-page text-left">
+        <div class="container">
+            <div class="text-bottom">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="{{ 'homepage'}}"><img src="{{ 'assets/img/home.png'|theme }}" alt=""></a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        <span>Mentor tiêu biểu</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper-page">
+        <div class="container">
+            <div class="wrapper-mentor">
+                <div class="header-mentor">
+                    <h1 class="title-inner title-mentor">Danh sách các mentor</h1>
+                    <h2 class="title__2 title-mtor-2">Sẽ đồng hành cùng con bạn</h2>
+                </div>
+                
+                <div class="content-mentor">
+                    <ul class="list-mentor-boxes">
+                        <!--Mentor item start-->
+                        {%for key, teachers in teacher %}
+                        <li class="mentor-box">
+                            <div id="teacher" data-id="{{teachers.id}}" title="" class="mentor-item">
+                                <div class="img bg-mentor-img">
+                                    <img class="bg-mentor-image" src="{{
+                                    key  == 0 or key == 5 ? 'assets/img/mt1.png'|theme : 
+                                    key  == 1 or key == 6 ? 'assets/img/mt2.png'|theme : 
+                                    key  == 2 or key == 7 ? 'assets/img/mt3.png'|theme :
+                                    key  == 3 or key == 8 ? 'assets/img/mt4.png'|theme :
+                                    key  == 4 or key == 9 ? 'assets/img/mt5.png'|theme }}" alt=""> 
+                                    <div class="mentor-front">
+                                        <img src="{{teachers.image | media }}" alt="">
+                                    </div>
+                                </div>
+                                <span class="txt-dt">{{teachers.info}}</span>
+                                <h3 class="title__2">{{teachers.name}}</h3>
+                            </a>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<!--Popup mentor start-->
+<div class="modal popup-mentor popup-common" id="popup_mentor">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="ion ion-ios-close"></i>
+            </button>
+            <div class="modal-body">
+                <div class="row align-items-center">
+                    <div class="col-left-mentor col-sm-4">
+                        <span class="icon">
+                            <i class="fa fa-quote-left"></i>
+                        </span>
+                        <div class="mentor-box ">
+                            <div class="img img-mentor">
+                                <img src="" alt="">
+                            </div>
+                            <span class="txt-dt"></span>
+                            <h3 class="title__2"></h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="text text-mentor">
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>";s:4:"code";N;s:3:"url";s:7:"/mentor";s:6:"layout";s:8:"homepage";s:7:"teacher";a:0:{}}}

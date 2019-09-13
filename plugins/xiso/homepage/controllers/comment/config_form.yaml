@@ -1,0 +1,10 @@
+name: Comment
+form: $/xiso/homepage/models/comment/fields.yaml
+modelClass: Xiso\Homepage\Models\Comment
+defaultRedirect: xiso/homepage/comment
+create:
+    redirect: 'xiso/homepage/comment/update/:id'
+    redirectClose: xiso/homepage/comment
+update:
+    redirect: xiso/homepage/comment
+    redirectClose: xiso/homepage/comment

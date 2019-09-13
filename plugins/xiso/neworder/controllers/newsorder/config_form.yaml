@@ -1,0 +1,10 @@
+name: NewsOrder
+form: $/xiso/neworder/models/newsorder/fields.yaml
+modelClass: Xiso\Neworder\Models\NewsOrder
+defaultRedirect: xiso/neworder/newsorder
+create:
+    redirect: 'xiso/neworder/newsorder/update/:id'
+    redirectClose: xiso/neworder/newsorder
+update:
+    redirect: xiso/neworder/newsorder
+    redirectClose: xiso/neworder/newsorder

@@ -1,0 +1,68 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table xiso_homepage_'
+    - builder_table_create_xiso_homepage_.php
+1.0.3:
+    - 'Created table xiso_homepage_banner'
+    - builder_table_create_xiso_homepage_banner.php
+1.0.4:
+    - 'Created table xiso_homepage_hocphi'
+    - builder_table_create_xiso_homepage_hocphi.php
+1.0.5:
+    - 'Created table xiso_homepage_gioithieu'
+    - builder_table_create_xiso_homepage_gioithieu.php
+1.0.6:
+    - 'Updated table xiso_homepage_gioithieu'
+    - builder_table_update_xiso_homepage_gioithieu.php
+1.0.7:
+    - 'Created table xiso_homepage_teacher'
+    - builder_table_create_xiso_homepage_teacher.php
+1.0.8:
+    - 'Created table xiso_homepage_comment'
+    - builder_table_create_xiso_homepage_comment.php
+1.0.9:
+    - 'Created table xiso_homepage_hoidap'
+    - builder_table_create_xiso_homepage_hoidap.php
+1.0.10:
+    - 'Created table xiso_homepage_setting'
+    - builder_table_create_xiso_homepage_setting.php
+1.0.11:
+    - 'Updated table xiso_homepage_gioithieu'
+    - builder_table_update_xiso_homepage_info.php
+1.0.12:
+    - 'Created table xiso_homepage_product'
+    - builder_table_create_xiso_homepage_product.php
+1.0.13:
+    - 'Updated table xiso_homepage_teacher'
+    - builder_table_update_xiso_homepage_teacher.php
+1.0.14:
+    - 'Drop table xiso_homepage_info'
+    - builder_table_delete_xiso_homepage_info.php
+1.0.15:
+    - 'Created table xiso_homepage_info'
+    - builder_table_create_xiso_homepage_info.php
+1.0.16:
+    - 'Updated table xiso_homepage_hocphi'
+    - builder_table_update_xiso_homepage_hocphi.php
+1.0.17:
+    - 'Updated table xiso_homepage_hocphi'
+    - builder_table_update_xiso_homepage_hocphi_2.php
+1.0.18:
+    - 'Updated table xiso_homepage_setting'
+    - builder_table_update_xiso_homepage_setting.php
+1.0.19:
+    - 'Updated table xiso_homepage_comment'
+    - builder_table_update_xiso_homepage_comment.php
+1.0.20:
+    - 'Updated table xiso_homepage_setting'
+    - builder_table_update_xiso_homepage_setting_2.php
+1.0.21:
+    - 'Updated table xiso_homepage_teacher'
+    - builder_table_update_xiso_homepage_teacher_2.php
+1.0.22:
+    - 'Updated table xiso_homepage_setting'
+    - builder_table_update_xiso_homepage_setting_3.php
+1.0.23:
+    - 'Updated table xiso_homepage_setting'
+    - builder_table_update_xiso_homepage_setting_4.php

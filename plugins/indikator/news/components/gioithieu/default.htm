@@ -1,0 +1,67 @@
+    <div class="page-content animated fadeInRight">
+        <div class="wrap-text-page text-left">
+            <div class="container">
+                <div class="text-bottom">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="{{ 'homepage' |page}}"><img src="{{'assets/img/home.png'|theme }}" alt=""></a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <span>{{post.title}}</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper-page">
+            <div class="container">
+                <div class="row">
+                    <!--Sidebar menu start-->
+                    <div class="col-lg-3">
+                        <div class="sidebar-collapse">
+                            <ul class="nav-sidebar">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="{{ 'gioi-thieu'|page({slug:'hop-tac-hocmai-funix'})}}" title="">
+                                        <span>Hợp tác HOCMAI-FUNiX</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ 'gioi-thieu'|page({slug:'ve-xiso'})}}" title="">
+                                        <span>Về XiSo</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="nav-link block-share">
+                                <span>Chia sẻ trang này</span>
+                                <p class="icon--fnt">
+                                    <a href="#" title="" class="_icon _icon-fb">
+                                        <i class="fa fa-facebook-square"></i>
+                                    </a>
+                                    <a href="#" title="" class="_icon _icon-print">
+                                        <i class="fa fa-print"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Sidebar menu end-->
+
+                    <div class="col-lg-9">
+                        <div class="wrap-page-body">
+                            <div class="content-page">
+                                <div class="txt-head-body">
+                                    <h1 class="title-page title-page-bb pb-15">
+                                       {{html_strip(post.title)}}
+                                    </h1>
+                                    <p>
+                                       {{html_strip(post.introductory)}}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,26 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        type: text
+    email:
+        label: Email
+        span: auto
+        type: text
+    phone:
+        label: 'Number Phone'
+        span: auto
+        type: text
+    year:
+        label: Year
+        span: auto
+        type: text
+    city:
+        label: City
+        span: auto
+        type: text
+    content:
+        label: Content
+        size: ''
+        span: auto
+        type: textarea
